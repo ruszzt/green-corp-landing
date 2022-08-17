@@ -163,3 +163,11 @@ footer {
 .footer__links a {
     margin-bottom: 15px;
 }
+.animate__fadeInLeft {
+    --animate-duration: 2s;
+    --animation-duration: 1;
+}
+.animate__fadeInRight {
+    --animate-duration: 2s;
+    --animation-duration: 1;
+}
