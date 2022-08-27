@@ -3,6 +3,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -38,6 +42,16 @@ button {
 .about__sun-image {
     width: 100px;
     height: 100px;
+    position: absolute;
+    animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .about {
     display: flex;
@@ -170,4 +184,58 @@ footer {
 .animate__fadeInRight {
     --animate-duration: 2s;
     --animation-duration: 1;
+}
+@media (max-width: 1024px) {
+    .about {
+        padding: 115px 20px;
+    }
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .about__image {
+        width: 280px;
+    }
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+}
+@media (max-width: 720px) {
+   header {
+    padding: 10px;
+   }
+   .header__logo {
+    height: 20px;
+    }
+    .form {
+    padding: 50px 10px;
+    }
+    header a {
+        margin-right: 10px;
+    }
+    .about {
+        flex-direction: column-reverse;
+        padding: 50px 10px;
+    }
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .about__image {
+        width: 280px;
+    }
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+    .form h1 {
+        font-size: 36px;
+    }
+    footer {
+        padding: 50px 10px;
+    }
+    .footer__container {
+        flex-direction: column;
+    }
 }
