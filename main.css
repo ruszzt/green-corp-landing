@@ -8,6 +8,11 @@ header {
     background-color: #fff;
     z-index: 1;
 }
+.orb-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 body {
     font-family: 'Raleway', sans-serif;
     color: #213053;
@@ -62,6 +67,7 @@ button {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 .about h1 {
     font-size: 70px;
@@ -398,9 +404,6 @@ footer {
     .promo__image {
         width: 100%;
         height: 500px;
-    }
-    .promo__text {
-        align-items: 
     }
     .promo__right {
         padding: 50px 10px;
