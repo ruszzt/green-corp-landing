@@ -3,10 +3,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: #fff;
+    background-color: 0;
     z-index: 1;
+    left: 0;
+    right: 0;
+    transition: width .25s easy;
+}
+.header__scrolled {
+    background-color: #fff;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101/10%);
 }
 .orb-canvas {
     position: absolute;
@@ -323,6 +330,7 @@ footer {
 @media (max-width: 1024px) {
     .about {
         padding: 115px 20px;
+        padding-top: 200px;
     }
     .about h1 {
         font-size: 36px;
@@ -352,6 +360,7 @@ footer {
     .about {
         flex-direction: column-reverse;
         padding: 50px 10px;
+        padding-top: 200px;
     }
     .about h1 {
         font-size: 36px;
